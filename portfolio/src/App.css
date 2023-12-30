@@ -1,7 +1,8 @@
 
 @font-face{
     font-family: 'Century Schoolbook';
-    src: url('');
+    src: url('./assets/fonts/CenturySchL-Bold.woff2') format('woff2'),
+        url('./assets/fonts/CenturySchL-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
