@@ -1,6 +1,6 @@
 import './about.css'
 
-function About() {
+const About = () => {
 
     return (
         <div className="about">
@@ -8,3 +8,5 @@ function About() {
         </div>
     )
 }
+
+export default About
