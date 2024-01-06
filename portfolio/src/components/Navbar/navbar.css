@@ -10,9 +10,8 @@
 }
 
 .AppBar{
-    background-color: #4CAF50;
+    position: static;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;

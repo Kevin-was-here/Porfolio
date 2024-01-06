@@ -5,7 +5,7 @@ import CatchingPokemon from '@mui/icons-material/CatchingPokemon'; //! Change to
 const Navbar = () => {
 
     return (
-        <AppBar position='static'>
+        <AppBar className="AppBar">
             <Toolbar>
                 <IconButton size="large" edge='start' color='inherit' aria-label="logo">
                         <CatchingPokemon />

@@ -6,6 +6,7 @@ import Projects from './pages/Projects/projects'
 import Blog from './pages/Blog/blog'
 import Navbar from './components/Navbar/navbar'
 import './App.css'
+import theme from './theme'
 
 function App() {
   return (
