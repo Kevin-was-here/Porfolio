@@ -1,25 +1,27 @@
 import React from "react";
-import { AppBar, Toolbar, IconButton, Typography, Stack, Button} from '@mui/material';
-import CatchingPokemon from '@mui/icons-material/CatchingPokemon'; //! Change to own icon
+import { AppBar, Toolbar, IconButton, Typography, Stack, Button, Container} from '@mui/material';
+import AdbIcon from '@mui/icons-material/Adb';
 
 const Navbar = () => {
-
     return (
-        <AppBar className="AppBar">
-            <Toolbar>
-                <IconButton size="large" edge='start' color='inherit' aria-label="logo">
-                        <CatchingPokemon />
-                </IconButton>
-                <Typography variant="h6" component='div' sx={{ flexGrow: 1 }}>
-                    Home
-                </Typography>
-                <Stack direction="row" spacing={2}>
-                    <Button color='inherit'>About</Button>
-                    <Button color='inherit'>Projects</Button>  
-                    <Button color='inherit'>Blog</Button>
-                    <Button color='inherit'>Contact Me</Button>
-                </Stack>
-            </Toolbar>
+        <AppBar className="AppBar" color=''>
+            <Container maxWidth="xl">
+                <Toolbar disableGutters>
+                    <IconButton>
+                        <AdbIcon className="LogoIcon" sx={{display:{xs:'none', md:'flex' }, mr:1}} />
+                        <Typography variant="h6" component='div' sx={{ mr:2, display:{xs:'none', md: 'flex'},}} className="LogoText">
+                            Home
+                        </Typography>
+                    </IconButton>
+
+                    <Stack direction="row" spacing={2}>
+                        <Button color='inherit'>About</Button>
+                        <Button color='inherit'>Projects</Button>  
+                        <Button color='inherit'>Blog</Button>
+                        <Button color='inherit'>Contact Me</Button>
+                    </Stack>
+                </Toolbar>
+            </Container>
         </AppBar>
     );
 };

@@ -1,18 +1,14 @@
-.Button{
-    background-color: #4CAF50;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+.AppBar{position: static;}
+
+.LogoIcon{
+    display: flex;
 }
 
-.AppBar{
-    position: static;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
+.LogoText{
+    display: flex;
+    font-family: monospace;
+    font-weight: 700;
+    color: 'inherit';
+    letter-spacing: .3rem;
+    text-decoration: none;
 }
