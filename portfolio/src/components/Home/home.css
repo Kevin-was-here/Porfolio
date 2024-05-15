@@ -1,0 +1,27 @@
+.home {
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        background-color: #f9f9f9;
+        padding-left: 5%;
+        justify-content: left;
+    }
+
+    h1 {
+        display: flex;
+        font-size: 50px;
+        line-height: 53px;
+        font-weight: 1000;
+        justify-content: match-parent;
+        align-items: center;
+        text-align: left;
+        margin: 0;
+    }
+
+    h2{
+        justify-content: match-parent;
+        align-items: center;
+    }
+}

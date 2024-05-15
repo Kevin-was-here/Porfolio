@@ -1,26 +1,18 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/home'
-import About from './pages/About/about'
-import Contact from './pages/Contact/contact'
-import Projects from './pages/Projects/projects'
-import Blog from './pages/Blog/blog'
+import React from 'react';
+import Home from './components/Home/home'
+import About from './components/About/about'
+import Contact from './components/Contact/contact'
+import Projects from './components/Projects/projects'
 import Navbar from './components/Navbar/navbar'
-import './App.css'
-import theme from './theme'
 
-function App() {
-  return (
-    <Router>
+export default function App() {
+    return (
+      <main className="text-gray-400 bg-gray-900 body-font">
         <Navbar />
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/blog" element={<Blog />} />
-        </Routes>
-    </Router>
-  )
-}
-
-export default App;
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+    );
+  }
